@@ -52,8 +52,105 @@ table {
 * {
     box-sizing: border-box;
 }
+// Imports //
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+
+// Variables //
+@main-font: 'Playfair Display', serif;
+@background: white;
+
+// MIXINS //
+.centered() {
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+// Main //
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-family: @main-font;
+
+	
 }
+
+.container {
+	margin: 0 auto;
+	width: 75%;
+	
+}
+
+ .bg {
+	 background: rgb(238, 229, 229);
+	 border-radius: 5px;
+
+ } // closes bg //
+
+ header {
+	 
+	 nav {
+		width: 99%;
+		display: flex;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		justify-content: space-between;
+		
+
+	 } 
+	 a {
+		 text-decoration: none;
+		 
+ }
+} // closes header //
+
+#intro {
+	display: flex;
+	.centered();
+
+	div {
+		display: flex;
+		flex-wrap: wrap;
+		
+		background: @background;
+		width: 90%;
+		margin-top: 5%;
+	h1 {
+		padding: 20px;
+		text-align: center;
+			
+		}
+	img {
+		margin-top 10%;
+		margin-left: 40%;
+		height: 20%;
+		width: 20%;
+		.centered();
+		
+		
+		
+	}
+	
+	p {
+		.centered();
+		width: 50%;
+	}
+		
+	}
+		
+}
+
+#skills {
+	display: flex;
+	background: @background;
+	div {
+		
+	}
+}
+
+	
+
+
+
 
