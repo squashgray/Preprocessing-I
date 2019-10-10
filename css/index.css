@@ -154,15 +154,34 @@ h1,
 h2 {
   font-weight: bold;
 }
-header nav {
-  width: 99%;
+header div {
   display: flex;
+}
+header nav {
+  display: flex;
+  width: 99%;
   margin-top: 5%;
   margin-bottom: 5%;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+  }
+}
 header a {
   text-decoration: none;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  header a {
+    display: flex;
+    border-bottom: 1px solid black;
+    width: 100%;
+    padding: 2% 0;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .bg {
   background: #e0d6d6;
@@ -175,6 +194,8 @@ header a {
 }
 #intro div {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid black;
   flex-direction: column;
   background: white;
@@ -185,15 +206,31 @@ header a {
   padding: 20px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  #intro div h1 {
+    width: 80%;
+  }
+}
 #intro div p {
   width: 50%;
-  margin-left: 28%;
   margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  #intro div p {
+    width: 80%;
+  }
 }
 #skills {
   margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #skills div {
   display: flex;
@@ -203,6 +240,13 @@ header a {
   border: 1px solid black;
   background: white;
   margin-top: 5%;
+}
+@media (max-width: 500px) {
+  #skills div {
+    width: 97.5%;
+    justify-content: center;
+    align-items: center;
+  }
 }
 #skills p {
   padding-top: 10%;
