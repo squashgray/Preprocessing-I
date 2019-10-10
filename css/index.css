@@ -151,7 +151,8 @@ h1 {
   font-size: 3.8rem;
 }
 h1,
-h2 {
+h2,
+h3 {
   font-weight: bold;
 }
 header div {
@@ -267,8 +268,30 @@ header a {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+@media (max-width: 500px) {
+  #work h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+#work h3 {
+  font-weight: bold;
+  margin-top: 5%;
+}
+@media (max-width: 500px) {
+  #work h3 {
+    margin-top: 10%;
+  }
+}
 #work p {
   padding-top: 2%;
+  margin-top: 3%;
+}
+@media (max-width: 500px) {
+  #work p {
+    margin-top: 3%;
+  }
 }
 footer {
   display: flex;
